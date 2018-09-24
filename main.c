@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <assert.h>
 
-// Тут ваш код
+int ctof(double cels) {
+    return (9/5.0 * cels) + 32;
+}
+
+int ftoc(double f) {
+    return 5/9.0 * (f - 32);
+}
 
 void test_ctof() {
     assert(ctof(0) == 32);
